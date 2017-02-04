@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Boldfont;
+    src: url(../font/theboldfont-webfont.woff);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-image: url(../assets/GetInTouch.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+/*debug*/
+
+div {
+    border: 0px solid green;
+}
+
+.nav {
+    font-family: Boldfont;
+    color: white;
+    background-image: url(../assets/GetInTouch.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+}
+
+.logo {
+    letter-spacing: 1px;
+    font-size: 20px;
+    flex: 1;
+}
+
+.selector {
+    text-align: right;
+    flex: 1;
+}
+
+.selector span {
+    transition: 0.3s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.m-button {
+    display: none;
+}
+
+.mobile-hide {
+    display: inline-block;
+}
+
+img {
+    float: left;
+    display: block;
+    cursor: pointer;
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:960px) {
+    .mobile-hide {
+        display: none;
+    }
+    .m-button {
+        display: inherit;
+    }
+    .m-button:hover {
+        color: white;
+    }
+    img {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 33.333vw;
+        height: 33.333vw;
+    }
+}

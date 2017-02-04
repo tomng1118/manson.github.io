@@ -1,0 +1,550 @@
+@font-face {
+    font-family: Boldfont;
+    src: url(../font/theboldfont-webfont.woff);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/*font style*/
+
+
+/*debug guiline*/
+
+div {
+    border: 0px solid green;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bodyContent {
+    font-family: Helvetica, sans-serif;
+    color: rgb(163, 163, 163);
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.bodyTitle {
+    letter-spacing: 2px;
+    font-family: Boldfont;
+    cursor: black;
+    font-size: 40px;
+    font-style: normal;
+}
+
+#logo {
+    background-color: black;
+    color: white;
+}
+
+#slogan {
+    font-family: Boldfont;
+    font-size: 30px;
+}
+
+.title {
+    font-family: Boldfont;
+    letter-spacing: 3px;
+    font-family: Boldfont;
+    color: white;
+    font-size: 50px;
+}
+
+.content {
+    padding: 20px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+.heading {
+    text-align: center;
+    font-family: Boldfont;
+    font-size: 60px;
+}
+
+
+/*navigation*/
+
+.nav {
+    color: white;
+    z-index: 999;
+    transition: 0.3s;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 40px;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 2px solid rgb(12, 232, 27);
+}
+
+.navTog {
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    transition: 0.3s;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.m-buttonTog {
+    display: none;
+}
+
+.list {
+    transition: 0.3s;
+    margin: 0 auto;
+    max-width: 400px;
+    z-index: 999;
+    color: yellow;
+    display: none;
+}
+
+.listTog {
+    transition: 0.3s;
+    position: relative;
+    top: calc(50vh - 220px);
+    display: list-item;
+    list-style: none;
+}
+
+.list-text {
+    font-family: Boldfont;
+    transition: 0.3s;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    text-align: left;
+    letter-spacing: 4px;
+    color: white;
+    margin: 20px;
+    display: block;
+}
+
+.list-text:hover {
+    transform: scale(1.1);
+    color: rgb(12, 232, 27);
+    border-bottom: 2px solid rgb(12, 232, 27);
+}
+
+
+/*Hero page*/
+
+#scrolldown {
+    position: absolute;
+    top: 81%;
+    left: calc(50% - 40px);
+}
+
+.sec1 {
+    height: 90vh;
+    background-image: url(../assets/GetInTouch2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 40% 30%;
+}
+
+.hero_text {
+    text-align: center;
+    letter-spacing: 5px;
+    position: relative;
+    padding: 10px;
+    top: calc(50vh - 270px);
+    color: white;
+    margin: 0 auto;
+    width: 960px;
+    font-size: 130px;
+    font-family: Boldfont;
+}
+
+.hero_text span {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 960px) {
+    #scrolldown {
+        position: absolute;
+        top: 91%;
+    }
+    .logo {
+        font-size: 20px;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    .sec1 {
+        height: 100vh;
+    }
+    .hero_text span {
+        font-size: 1em;
+    }
+    .hero_text {
+        top: calc(50vh - 120px);
+        margin: 0 auto;
+        width: 90%;
+        font-size: 20vw;
+        font-family: Boldfont;
+    }
+}
+
+
+/*about*/
+
+.sec2 {
+    background-repeat: no-repeat;
+    min-height: auto;
+    height: auto;
+    background-color: rgb(246, 246, 246);
+    background-size: cover;
+    background-position: 40% 30%;
+}
+
+.wrapper1 {
+    display: flex;
+}
+
+.sec2-img {
+    flex: 1;
+    min-width: 50vw;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1486275189&di=0bf1f293561443638863956f3034d85c&imgtype=jpg&er=1&src=http%3A%2F%2Fs13.sinaimg.cn%2Fmiddle%2F67369d25gca69ee4eceac%26amp%3B690");
+}
+
+.sec2-txt {
+    flex: 1;
+    margin: 0 auto;
+    padding: 80px;
+    min-height: 35vh;
+}
+
+.about-txt {
+    max-width: 400px;
+}
+
+.sec2-txt span {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+
+.sec2-txt p {
+    text-align: left;
+    color: rgb(163, 163, 163);
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper1 {
+        display: block;
+    }
+    .sec2-img {
+        max-height: 300px;
+    }
+    .sec2-txt {
+        text-align: center;
+        padding: 30px;
+        min-height: 0px;
+        height: auto;
+    }
+    .sec2-txt p {
+        margin: 16px auto;
+        text-align: center;
+    }
+}
+
+
+/* our team */
+
+.sec3 {
+    min-height: 50vh;
+    color: white;
+    height: auto;
+    background-color: black;
+    background-image: url(../assets/GetInTouch2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 40% 30%;
+}
+
+.wrapper2 {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.person {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+    padding: 80px 30px 80px 30px;
+}
+
+.per-img img {
+    border-radius: 100%;
+    margin: 30px auto 16px auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.per-txt-content {
+    margin: 20px 0px 16px 0px;
+}
+
+@media screen and (max-width:960px) {
+    .sec3 {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .wrapper2 {
+        max-width: 100vw;
+        display: block;
+    }
+    .person {
+        padding: 20px 30px 20px 30px;
+    }
+    .per-img img {
+        margin: 10px auto 16px auto;
+    }
+}
+
+
+/*gallery*/
+
+.sec4 {
+    padding: 60px 0px 60px 0px;
+    background-color: rgb(246, 246, 246);
+    min-height: 40vh;
+}
+
+.sec4-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.wrapper3 {
+    overflow-y: hidden;
+    margin-bottom: 5px;
+    height: 500px;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.wrapper3 img {
+    margin-left: 0px;
+    cursor: pointer;
+    object-position: center;
+    transition: 0.3s;
+    object-fit: cover;
+    height: 100%;
+    width: 350px;
+}
+
+.sec4-but {
+    transition: 0.3s;
+    cursor: pointer;
+    max-width: 150px;
+    margin: 30px auto 0px auto;
+    border: 2px solid black;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+}
+
+.sec4-but:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:960px) {
+    .sec4 {
+        padding: 40px 0px 40px 0px;
+    }
+    .wrapper3 {
+        height: 280px;
+    }
+    .wrapper3 img {
+        width: 150px;
+    }
+}
+
+
+/*contact me*/
+
+.sec5 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(../assets/GetInTouch2.jpg);
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.wrapper4 {
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+}
+
+.sec5-get {
+    border-right: 1px solid white;
+    letter-spacing: 10px;
+    min-height: 20vh;
+    font-size: 70px;
+    padding: 30px;
+    flex: 1;
+}
+
+.sec5-infor {
+    padding: 30px 30px 30px 80px;
+    flex: 1;
+}
+
+.sec5-infor span {
+    font-size: 30px;
+    font-style: normal;
+    font-family: Boldfont;
+}
+
+.sec5-infor img {
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.sec5-infor img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:960px) {
+    .sec5 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .wrapper4 {
+        display: block
+    }
+    .sec5-get {
+        border-right: 0px solid white;
+        min-height: 0px;
+        font-size: 70px;
+        padding: 30px 30px 10px 30px;
+    }
+    .sec5-infor {
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    .sec5-infor img:hover {
+        transform: scale(1);
+    }
+}
+
+
+/*footer*/
+
+.footer {
+    color: white;
+    background-color: black;
+    min-height: 330px;
+    padding: 30px;
+}
+
+.wrapper5 {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+}
+
+.sec5font {
+    line-height: 30px;
+    margin: 0px;
+}
+
+.sec5title {
+    letter-spacing: 1px;
+    font-family: Boldfont;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.sec5content {
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(163, 163, 163);
+    font-size: 13px;
+}
+
+.sec5content:hover {
+    color: rgb(12, 232, 27);
+}
+
+.sec5logo {
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 20px;
+    flex: 1;
+}
+
+.join {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    flex: 1;
+    padding: 30px;
+}
+
+.support {
+    flex: 1;
+    padding: 30px;
+}
+
+@media screen and (max-width:960px) {
+    .wrapper5 {
+        top: 15px;
+        height: 490px;
+        display: block;
+    }
+    .sec5logo {
+        padding: 0px;
+    }
+    .support {
+        border-bottom: 5px solid white;
+        padding: 0px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .join {
+        border-bottom: 5px solid white;
+        border-right: 0px solid white;
+        border-left: 0px solid white;
+        padding: 0px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .sec5logo {
+        padding: 10px;
+    }
+}
